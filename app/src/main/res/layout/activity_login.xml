@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/logo_view"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/splash" />
+
+    <TextView
+        android:id="@+id/explain_app_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="책 읽기 습관을 기를 수 있도록 도와주고\n자신이 읽은 책을 관리할 수 있는 어플입니다"
+        android:textColor="#c66f0c"
+        android:textSize="18dp" />
+
+
+    <com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+        android:id="@+id/naver_login"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/explain_app_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/naver_login" /> <!--네이버 로그인 api 넣으면서 네이버에서 제공하는 버튼 이미지(naver_login.png)로 변경했습니다-->
+
+
+    <com.kakao.usermgmt.LoginButton
+        android:id="@+id/kakao_login"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/naver_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" /> <!--카카오톡 로그인 api 넣으면서 카카오톡에서 제공하는 버튼 이미지 사용-->
+</RelativeLayout>

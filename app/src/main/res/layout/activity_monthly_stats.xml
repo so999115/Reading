@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/three_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3개월"
+        android:layout_above="@+id/genre_button"
+        android:layout_toLeftOf="@+id/six_month"/>
+
+    <Button
+        android:id="@+id/six_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6개월"
+        android:layout_alignTop="@+id/three_month"
+        android:layout_above="@+id/genre_button"
+        android:layout_toLeftOf="@+id/one_year"/>
+
+    <Button
+        android:id="@+id/one_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1년"
+        android:layout_alignTop="@+id/six_month"
+        android:layout_above="@+id/genre_button"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/genre_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="장르 통계 보기"
+        android:layout_alignLeft="@+id/three_month"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

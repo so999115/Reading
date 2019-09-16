@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/remain_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/desire_reading_book"
+            android:layout_marginTop="15dp"
+            android:text="남은 시간"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/remain_time_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/remain_time"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@+id/remain_time"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/desire_reading_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/remain_time"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="독서 희망 권수"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/desire_reading_book_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/desire_reading_book"
+            android:layout_alignStart="@+id/remain_time_answer"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/reading_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/desire_reading_book"
+            android:layout_below="@+id/desire_reading_book"
+            android:layout_marginTop="16dp"
+            android:text="읽은 책 권수"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/reading_book_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/present_book_info"
+            android:layout_alignStart="@+id/desire_reading_book_answer"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/present_book_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/reading_book"
+            android:layout_below="@+id/reading_book"
+            android:layout_marginTop="15dp"
+            android:text="현재 읽고 있는 책"
+            android:textSize="20dp" />
+
+        <ListView
+            android:id="@+id/book_info_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonmenu"
+            android:layout_below="@+id/present_book_info"
+            android:layout_marginTop="15dp"
+            android:background="#ffae67"
+            android:divider="#ffffff"
+            android:dividerHeight="5dp" />
+
+        <LinearLayout
+            android:id="@+id/buttonmenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+                <ImageButton
+                    android:id="@+id/home_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/clicked_home"
+                    android:layout_weight="1"/>
+
+                <ImageButton
+                    android:id="@+id/my_library_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/my_library"
+                    android:layout_weight="1"/>
+
+                <ImageButton
+                    android:id="@+id/review_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/review"
+                    android:layout_weight="1"/>
+
+                <ImageButton
+                    android:id="@+id/diary_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/diary"
+                    android:layout_weight="1"/>
+
+                <ImageButton
+                    android:id="@+id/user_setting_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/user_setting"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+
+</RelativeLayout>

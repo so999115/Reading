@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffae67">
+
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="당신은 어떤 사람인가요?"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/question1_month_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="한달에 책을 몇권 정도 읽으시나요?"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title_view"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/answer1_month_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="숫자만 입력해주세요"
+        android:textColorHint="#898989"
+        android:textSize="15dp"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/question1_month_view"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/question2_year_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="일년에 책을 몇권 읽고 싶나요?"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/answer1_month_view"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/answer2_year_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="숫자만 입력해주세요"
+        android:textColorHint="#898989"
+        android:textSize="15dp"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/question2_year_view"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/question3_reading_time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="독서습관을 위해 독서시간을 설정합니다\n하루에 책을 얼마나 읽기를 원하나요?"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/answer2_year_view"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/answer3_reading_time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="분 단위로 입력해주세요"
+        android:textColorHint="#898989"
+        android:textSize="15dp"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/question3_reading_time_view"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/question4_sleep_time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="독서알람 시간을 설정해주세요."
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/answer3_reading_time_view"
+        android:layout_marginTop="10dp"/>
+
+    <TimePicker
+        android:id="@+id/answer4_alarm_time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="105dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/question4_sleep_time_view"
+        android:layout_marginTop="10dp"
+        android:timePickerMode="spinner"/>
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_below="@+id/answer4_alarm_time_picker"
+        android:layout_marginLeft="250dp" />
+
+</RelativeLayout>
